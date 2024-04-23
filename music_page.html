@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-image: url(lover_album.jpeg); /* Your background image URL */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 1px 0;
+}
+ 
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 12px;
+    text-align: center;
+}
+
+nav {
+    background-color: #3d2f37;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+}
+
+
+li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #e810cb;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+main {
+    background-image: url(lover_album.jpeg); 
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    padding: 15px 0;
+    
+    
+}
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(peach_color.jpeg); /* Image covering the rest of the page */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure the background stays behind the content */
+}
+article {
+    padding-top: 5px;
+    text-align: justify;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+
+article::first-letter {
+    font-size: 30px;
+    float: left;
+    margin-right: 10px;
+    
+}
+h4 {
+    text-align: center;
+    text-decoration: none;
+    color: #e38eca;
+    font-size: 18px;
+
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+button{
+                         font-size: 15px;
+                         background-color:rgb(243, 38, 79);
+                         color: white;
+                         border-radius: 25px;
+                         padding: 10px 20px;
+                         cursor: pointer;
+                         border: none;
+                         border-radius: 2px;
+
+}
+.date-box {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    color: #333;
+}
+.tour-date pre {
+    margin: 0;
+}
+
+.tour-date hr {
+    margin-top: 5px;
+    margin-bottom: 1px;
+    border: 0;
+    border-top: 1px solid #eb9595;
+}
+
+
+
+
+ 
+</style>
+<body>
+    <header>
+        <h1>TAYLOR SWIFT</h1>
+        <p>Main Page</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Tribute_page.html">TOUR</a></li>
+            <li><a href="#music">MUSIC</a></li>
+            <li><a href="#video">VIDEO</a></li>
+            <li><a href="#gallert">GLARREY</a></li>
+            <li><a href="#merch">MERCH</a></li>
+            <li><a href="#bio">BIO</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <img src="taylor_swift.jpeg" 
+    alt="this ia a picture of a taylor" height="250" width="250">
+    </main>
+    <article>
+       
+        BIO
+        Taylor Swift (born December 13, 1989, West Reading, Pennsylvania, U.S.) is a multitalented singer-songwriter and global
+        superstar who has captivated audiences with her heartfelt lyrics and catchy melodies, solidifying herself as one of the
+        most influential artists in contemporary music. In 2024 she made history when she won the Grammy Award for album of the
+        year for Midnights (2022), becoming the first artist to win in that category four times.
+        
+        <h4> Up Comming TOUR </h4>
+            <div class = tour-date>
+                <pre>
+
+                <span class="date-box"><big>28</big><small>JUL</small> </span>       München Taylor Swift - M72 World Tour.    <button>Tickes</button>
+                <hr>              
+                <span class="date-box"><big>30</big><small>JUL</small> </span>       Paris Taylor Swift - M72 World Tour.      <button>Tickes</button>
+                                                                                                                          
+            </pre>                                                             
+            </div>
+    </article>
+
+
+    <footer>
+        <p>&copy; 2024 Music Page. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
